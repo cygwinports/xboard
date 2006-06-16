@@ -1,0 +1,73 @@
+xboard
+------------------------------------------
+X11 frontend for chess games such as GNU chess.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  bash
+  libX11_6-1.0.0-2
+  libXaw7-1.0.1-1
+  perl
+
+Build requirements:
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  binutils-20050610-1
+  cygport-0.1.7-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.80-1
+  sed-4.1.4-1
+  texinfo-4.8-1
+
+Canonical homepage:
+  http://www.tim-mann.org/xboard.html
+
+Canonical download:
+  ftp://ftp.gnu.org/gnu/xboard/
+  
+------------------------------------
+
+Build instructions:
+  unpack xboard-4.2.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./xboard-4.2.7-X.cygport all
+
+This will create:
+  /usr/src/xboard-4.2.7-X-src.tar.bz2
+  /usr/src/xboard-4.2.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distro
+
+  /etc/postinstall/xboard.sh
+  /usr/bin/cmail
+  /usr/bin/pxboard
+  /usr/bin/xboard.exe
+  /usr/bin/zic2xpm.exe
+  /usr/share/doc/Cygwin/xboard-4.2.7.README
+  /usr/share/doc/xboard-4.2.7/AUTHORS
+  /usr/share/doc/xboard-4.2.7/COPYING
+  /usr/share/doc/xboard-4.2.7/COPYRIGHT
+  /usr/share/doc/xboard-4.2.7/ChangeLog
+  /usr/share/doc/xboard-4.2.7/FAQ
+  /usr/share/doc/xboard-4.2.7/INSTALL
+  /usr/share/doc/xboard-4.2.7/NEWS
+  /usr/share/doc/xboard-4.2.7/READ_ME
+  /usr/share/doc/xboard-4.2.7/TODO
+  /usr/share/info/xboard.info.gz
+  /usr/share/man/man6/xboard.6.gz
+  /usr/share/man/man6/zic2xpm.6.gz
+
+------------------
+
+Port Notes:
+
+----- version 4.2.7-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by: Yaakov Selkowitz <yselkowitz@netscape.net> 
