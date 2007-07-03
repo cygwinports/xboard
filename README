@@ -3,22 +3,23 @@ xboard
 X11 frontend for chess games such as GNU chess.
 
 Runtime requirements:
-  cygwin-1.5.19-4
+  cygwin-1.5.24-2
   bash
-  libX11_6-1.0.0-2
-  libXaw7-1.0.1-1
+  gnuchess	(or crafty)
+  libX11_6-1.1.1-1
+  libXaw3d8-1.5E-1
   perl
 
 Build requirements:
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
-  binutils-20050610-1
-  cygport-0.1.7-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  make-3.80-1
-  sed-4.1.4-1
-  texinfo-4.8-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+  texinfo
 
 Canonical homepage:
   http://www.tim-mann.org/xboard.html
@@ -48,6 +49,7 @@ Files included in the binary distro
   /usr/bin/pxboard
   /usr/bin/xboard.exe
   /usr/bin/zic2xpm.exe
+  /usr/share/applications/xboard.desktop
   /usr/share/doc/Cygwin/xboard-4.2.7.README
   /usr/share/doc/xboard-4.2.7/AUTHORS
   /usr/share/doc/xboard-4.2.7/COPYING
@@ -61,13 +63,21 @@ Files included in the binary distro
   /usr/share/info/xboard.info.gz
   /usr/share/man/man6/xboard.6.gz
   /usr/share/man/man6/zic2xpm.6.gz
+  /usr/share/pixmaps/xboard.png
 
 ------------------
 
 Port Notes:
 
+----- version 4.2.7-3 -----
+Rebuilt with Gentoo patches and Xaw3d.
+
+----- version 4.2.7-2 -----
+Rebuilt for modular X11.
+
 ----- version 4.2.7-1 -----
 Initial release for Cygwin.
 
 
-Cygwin port maintained by: Yaakov Selkowitz <yselkowitz@netscape.net> 
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
