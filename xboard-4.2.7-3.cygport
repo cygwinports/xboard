@@ -13,7 +13,7 @@ DOCS="READ_ME"
 
 src_compile() {
 	cd ${S}
-	autoconf-2.5x || error
+	WANT_AUTOCONF=2.5 autoconf -f || error
 
 	cd ${B}
 	cygconf

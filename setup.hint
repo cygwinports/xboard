@@ -1,4 +1,4 @@
 category: Games X11
-requires: cygwin bash gnuchess perl libX11_6 libXaw3d8
+requires: cygwin bash gnuchess perl libX11_6 libXaw8 libXpm4 libXt6
 sdesc: "X11 GUI for GNU chess"
 ldesc: "X11 GUI for GNU chess"

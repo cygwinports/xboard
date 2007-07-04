@@ -7,7 +7,9 @@ Runtime requirements:
   bash
   gnuchess	(or crafty)
   libX11_6-1.1.1-1
-  libXaw3d8-1.5E-1
+  libXaw8-1.0.2-1
+  libXpm4-3.5.6-1
+  libXt6-1.0.4-1
   perl
 
 Build requirements:
@@ -70,7 +72,7 @@ Files included in the binary distro
 Port Notes:
 
 ----- version 4.2.7-3 -----
-Rebuilt with Gentoo patches and Xaw3d.
+Rebuilt with Gentoo patches and Xaw8.
 
 ----- version 4.2.7-2 -----
 Rebuilt for modular X11.
