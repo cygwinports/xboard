@@ -1,15 +1,13 @@
 DESCRIPTION="X11 GUI for GNU chess"
 HOMEPAGE="http://tim-mann.org/xboard.html"
 SRC_URI="http://ftp.gnu.org/gnu/${PN}/${P}.tar.gz
-         http://dev.gentoo.org/~wolf31o2/sources/dump/${PN}.png"
+         mirror://gentoo/${PN}.png"
 PATCH_URI="
 		mirror://portage/games-board/${PN}/files/${P}-cmail.patch
 		mirror://portage/games-board/${PN}/files/${P}-default-program.patch
 		mirror://portage/games-board/${PN}/files/${P}-destdir.patch
 		mirror://portage/games-board/${PN}/files/${P}-xaw3d_configure.patch
 "
-
-DOCS="READ_ME"
 
 src_compile() {
 	cd ${S}
@@ -29,3 +27,4 @@ src_install() {
 	doicon ${S}/${PN}.png
 	make_desktop_entry ${PN} "Xboard" ${PN}.png "Game;BoardGame"
 }
+DOCS="READ_ME"

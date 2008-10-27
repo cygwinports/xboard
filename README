@@ -3,21 +3,21 @@ xboard
 X11 frontend for chess games such as GNU chess.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-15
   bash
   gnuchess	(or crafty)
-  libX11_6-1.1.1-1
-  libXaw8-1.0.2-1
-  libXpm4-3.5.6-1
-  libXt6-1.0.4-1
+  libX11_6-1.1.5-1
+  libXaw7-1.0.4-2
+  libXpm4-3.5.7-1
+  libXt6-1.0.5-1
   perl
+  xterm
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  binutils-20060817-1
-  cygport-0.3.1-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  binutils-20080624-2
+  cygport-0.4.2-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   make-3.81-1
   sed-4.1.5-2
@@ -29,7 +29,7 @@ Canonical homepage:
 Canonical download:
   ftp://ftp.gnu.org/gnu/xboard/
   
-------------------------------------
+-------------------------------------------
 
 Build instructions:
   unpack xboard-4.2.7-X-src.tar.bz2
@@ -52,7 +52,6 @@ Files included in the binary distro
   /usr/bin/xboard.exe
   /usr/bin/zic2xpm.exe
   /usr/share/applications/xboard.desktop
-  /usr/share/doc/Cygwin/xboard-4.2.7.README
   /usr/share/doc/xboard-4.2.7/AUTHORS
   /usr/share/doc/xboard-4.2.7/COPYING
   /usr/share/doc/xboard-4.2.7/COPYRIGHT
@@ -70,6 +69,9 @@ Files included in the binary distro
 ------------------
 
 Port Notes:
+
+----- version 4.2.7-4 -----
+Rebuilt for Xaw7.
 
 ----- version 4.2.7-3 -----
 Rebuilt with Gentoo patches and Xaw8.
