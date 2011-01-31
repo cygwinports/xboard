@@ -1,4 +1,4 @@
 category: Games X11
-requires: bash gnuchess perl libgcc1 libX11_6 libXaw7 libXpm4 libXt6 xterm
+requires: gnuchess libX11_6 libXaw7 libXmu6 libXpm4 libXt6 xterm
 sdesc: "X11 GUI for GNU chess"
 ldesc: "X11 GUI for GNU chess"
