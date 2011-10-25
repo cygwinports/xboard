@@ -1,0 +1,22 @@
+--- origsrc/xboard-4.5.3/filebrowser/dir.c	2011-10-01 17:00:54.000000000 -0500
++++ src/xboard-4.5.3/filebrowser/dir.c	2011-10-24 23:19:58.320829700 -0500
+@@ -26,7 +26,7 @@
+ 
+ #include <stdio.h>
+ #include <stdlib.h> /* for qsort */
+-#include "../config.h" /* to check for dirent.h */
++#include "config.h" /* to check for dirent.h */
+ 
+ #ifdef SEL_FILE_IGNORE_CASE
+ #include <ctype.h>
+--- origsrc/xboard-4.5.3/filebrowser/path.c	2011-10-01 17:00:54.000000000 -0500
++++ src/xboard-4.5.3/filebrowser/path.c	2011-10-24 23:19:46.410813300 -0500
+@@ -26,7 +26,7 @@
+ 
+ #include <stdio.h>
+ #include <stdlib.h> /* for qsort */
+-#include "../config.h"
++#include "config.h"
+ 
+ #ifdef SEL_FILE_IGNORE_CASE
+ #include <ctype.h>
