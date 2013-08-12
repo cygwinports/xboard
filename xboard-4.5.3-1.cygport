@@ -1,6 +1,0 @@
-DESCRIPTION="X11 GUI for GNU chess"
-HOMEPAGE="http://www.gnu.org/software/xboard/"
-SRC_URI="mirror://gnu/xboard/${P}.tar.gz"
-PATCH_URI="4.5.3-vpath.patch"
-
-DOCS="SHORTLOG"

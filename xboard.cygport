@@ -1,0 +1,24 @@
+NAME="xboard"
+VERSION=4.7.1
+RELEASE=1
+CATEGORY="Games"
+SUMMARY="GUI for GNU chess"
+DESCRIPTION="XBoard is a graphical user interface for chess in all its major
+forms, including international chess, xiangqi (Chinese chess), shogi (Japanese
+chess) and Makruk, in addition to many minor variants such as Losers Chess,
+Crazyhouse, Chess960 and Capablanca Chess. It displays a chessboard on the
+screen, accepts moves made with the mouse, and loads and saves games in
+Portable Game Notation (PGN). It serves as a front-end for many different
+chess services."
+REQUIRES="gnuchess"
+HOMEPAGE="http://www.gnu.org/software/xboard/"
+SRC_URI="mirror://gnu/xboard/xboard-${VERSION}.tar.gz"
+
+DOCS="SHORTLOG"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	make_etc_defaults /etc/xboard.conf
+}
