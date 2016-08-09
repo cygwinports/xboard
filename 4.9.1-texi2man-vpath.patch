@@ -1,0 +1,20 @@
+--- origsrc/xboard-4.9.1/texi2man	2016-05-18 00:50:45.000000000 -0500
++++ src/xboard-4.9.1/texi2man	2016-08-08 19:03:13.178922900 -0500
+@@ -4,6 +4,8 @@
+ 
+ # Script to translate a texinfo file into an nroff manual page.
+ 
++use File::Basename qw(dirname);
++
+ $version="1.01.tpm1";
+ 
+ $html=0;
+@@ -169,7 +171,7 @@ sub parse
+ 
+     if (/\@include (.*)/) {
+ 	my $INCL;
+-        open($INCL, $1) or open($INCL, "../$1") or die "$1: $!";
++        open($INCL, $1) or open($INCL, dirname($1)) or die "$1: $!";
+         while (<$INCL>) {
+             parse();
+         }

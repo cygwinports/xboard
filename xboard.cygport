@@ -1,5 +1,5 @@
 NAME="xboard"
-VERSION=4.7.1
+VERSION=4.9.1
 RELEASE=1
 CATEGORY="Games"
 SUMMARY="GUI for GNU chess"
@@ -13,6 +13,12 @@ chess services."
 REQUIRES="gnuchess"
 HOMEPAGE="http://www.gnu.org/software/xboard/"
 SRC_URI="mirror://gnu/xboard/xboard-${VERSION}.tar.gz"
+PATCH_URI="
+	4.9.1-engines.patch
+	4.9.1-texi2man-vpath.patch
+"
+
+DIFF_EXCLUDES="stamp-vti version.texi xboard.info"
 
 DOCS="SHORTLOG"
 

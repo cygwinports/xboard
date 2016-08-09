@@ -1,0 +1,22 @@
+--- origsrc/xboard-4.9.1/xboard.conf	2016-05-18 00:50:45.000000000 -0500
++++ src/xboard-4.9.1/xboard.conf	2016-08-08 21:20:23.529467600 -0500
+@@ -73,7 +73,7 @@
+ ;
+ ; Engines & adjudicatons in engine-engine games
+ ;
+--firstChessProgram fairymax
++-firstChessProgram gnuchess
+ -firstChessProgramNames {fairymax
+ "Fruit 2.1" -fcp fruit -fUCI
+ "Crafty" -fcp crafty
+--- origsrc/xboard-4.9.1/xboard.texi	2016-05-18 00:50:45.000000000 -0500
++++ src/xboard-4.9.1/xboard.texi	2016-08-08 21:20:31.077648600 -0500
+@@ -2628,7 +2628,7 @@ Name of first and second chess engine, r
+ A second chess engine is started only in Two Machines (match) mode,
+ or in Analyze mode with two engines.
+ The second engine is by default the same as the first.
+-Default for the first engine: @file{fairymax}.
++Default for the first engine: @file{gnuchess}.
+ @item -fe or -firstEngine nickname
+ @itemx -se or -secondEngine nickname
+ @cindex se, option
